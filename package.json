@@ -83,7 +83,8 @@
         "wordwrap": "0.0.x",
         "resolve": "1.1.x",
         "js-yaml": "3.x",
-        "once": "1.x"
+        "once": "1.x",
+        "source-map": "0.4.x"
     },
     "devDependencies": {
         "rimraf": "2.2.x",
