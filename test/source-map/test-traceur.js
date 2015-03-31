@@ -1,3 +1,6 @@
+if (process.version.indexOf('v0.8') === 0) {
+    return;
+}
 var path = require('path'),
     fs = require('fs'),
     example1 = path.resolve(__dirname, 'traceur', 'example1'),
