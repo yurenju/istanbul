@@ -43,11 +43,10 @@ module.exports = {
                 collector.add(originalFileCoverage);
                 collector.done();
                 finalCoverage = collector.getFinalCoverage();
-                test.ok(finalCoverage);
                 test.equal(1, Object.keys(finalCoverage).length);
                 cov = finalCoverage[Object.keys(finalCoverage)[0]];
                 test.equal(5, Object.keys(cov.statementMap).length);
-                test.equal(2, Object.keys(cov.fnMap).length);
+                test.equal(3, Object.keys(cov.fnMap).length);
                 test.equal(1, Object.keys(cov.branchMap).length);
                 test.done();
             } catch(ex) { console.log(ex); console.log(ex.stack);}
